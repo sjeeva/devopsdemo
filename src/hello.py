@@ -5,6 +5,10 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/demo")
+def hello():
+    return "<h1>GTSaaS Demo</h1>"
+
 @app.route("/user/<name>")
 def user(name):
     return '<h1>Hello, %s!</h1>' % name
