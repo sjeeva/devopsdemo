@@ -6,7 +6,7 @@ def hello():
     return "Hello World!"
 
 @app.route("/demo")
-def hello():
+def demo():
     return "<h1>GTSaaS Demo</h1>"
 
 @app.route("/user/<name>")
